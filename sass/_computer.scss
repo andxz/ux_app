@@ -16,23 +16,21 @@ body {
     border: 1px solid none;
     margin: auto;
     overflow: hidden;
-    border: 1px solid black;
+    border: 4px solid #255000;
 }
 
 header {
     padding: 0px;
-    height: 200px;
+    margin-top: 10px;
+    height: 175px;
     width: 100%;
-    background-color: #f6f6f6;
     padding-top: 0px;
     text-align: center;
-    border: 1px solid black;
 
 }
 
 .main_header {
     padding: 20px;
-    border: 1px solid black;
 
 }
 
@@ -64,15 +62,21 @@ main {
 
 }
 
+.main_box {
+    float: left;
+    height: 1000px;
+    width: 100%;
+
+
+}
+
 .middle_parent_box {
     padding: 100px;
     padding-top: 20px;
     float: left;
     height: 100%;
     width: 100%;
-    background-color: #F5F5F5;
     box-sizing: border-box;
-    border: 1px solid black;
 
 }
 
@@ -83,26 +87,53 @@ main {
     height: 100%;
     box-sizing: border-box;
     padding-left: 5px;
-    border: 1px solid black;
 }
 
-.ads_first_page_left {
-float: left;
-width: 25%;
+
+.title_container {
+
+padding: 10px;
 height: 100%;
 
+
 }
 
+.container {
+
+height: 100%;
+width: 100%;
+
+}
 .ad_container {
 padding: 10px;
+width: 98%;
 height: 85px;
 cursor:pointer;
-
+overflow: auto;
 }
 
 .ad_container:hover {
-  background-color: #3e8e41;
+  background-color: #255000;
   color: white;
+
+}
+
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid #255000;
+    padding: 0; 
+}
+
+.hr {
+
+float: left;
+width: 100%;
+height: 20px;
+box-sizing: border-box;
+    display:block;
+
 }
 
 .ads_first_page_title_left {
@@ -120,6 +151,15 @@ float: left;
 width: 20%;
 height: 100%;
 box-sizing: border-box;
+
+}
+
+.ads_first_page_left {
+float: left;
+width: 25%;
+height: 100%;
+    box-sizing: border-box;
+
 
 }
 
@@ -146,10 +186,8 @@ word-wrap: break-word;
 footer {
     float: left;
     margin-top: 10px;
-    height: 150px;
+    height: 175px;
     width: 100%;
-    background-color: #f6f6f6;
-    border: 1px solid black;
         box-sizing: border-box;
 
 
@@ -159,16 +197,17 @@ footer {
     float: left;
     width: 33.3%;
     height: 100%;
-    padding-top: 5px;
-        border: 1px solid black;
+    padding-top: 25px;
+        border: 1px solid #f6f6f6;
     text-align: center;
         box-sizing: border-box;
   cursor:pointer;
+background-color: #255000;
 
 }
 
 .footer_menu:hover {
-  background-color: #3e8e41;
+  background-color: #255000;
   color: white;
 }
 
@@ -189,6 +228,20 @@ a {
     color: black;
     text-decoration: none;
 }
+
+
+.read_more {
+
+    padding-right: 10px;
+    color: none;
+    text-decoration: underline;
+}
+
+.read_more:hover {
+  color: #255000;
+}
+
+
 
 ul {
     margin: 0;
@@ -253,6 +306,7 @@ input[type=text] {
     padding: 12px 20px;
     margin: 0px 0;
     box-sizing: border-box;
+    display: block;
 }
 
 input[type=text]:focus {
@@ -260,7 +314,7 @@ input[type=text]:focus {
 }
 
 .button_style {
-    background-color: black;
+    background-color: #255000;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -287,21 +341,13 @@ input[type=text]:focus {
 
 }
 
-.infoElements {
-    float: left;
-    height: 50%;
-    width: 25%;
-    text-transform: uppercase;
-    box-sizing: border-box;
-
-}
 
 p {
     text-transform: uppercase;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 800;
     margin: 0px;
     display: inline;
@@ -318,83 +364,11 @@ h2 {
 
 
 h3 {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 800;
     margin: 0px;
     display: inline;
 
 }
 
-#loading {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    position: fixed;
-    display: block;
-    z-index: 99
-}
 
-#loading-image {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    z-index: 100
-}
-
-/* Dropdown Button */
-
-.dropbtn {
-    background-color: #2a75bb;
-    color: white;
-    width: 500px;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    font-size: 12px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-.show {
-    display: block;
-}
-
-.scrollable-menu {
-    height: auto;
-    max-height: 200px;
-    overflow-x: hidden;
-}
