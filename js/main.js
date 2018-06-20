@@ -3,6 +3,9 @@
 var mainBox = document.getElementById('main_box');
 
 function homeButton() {
+    
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
 
 var firstPageContent = `
 <div class="middle_parent_box">
@@ -19,7 +22,7 @@ var firstPageContent = `
         </div>
         <div class="hr"><hr></div>
         </div>
-<div class="ad_container" onClick="adExample()">
+<div class="ad_container" onClick="adExample_1()">
         <div class="ads_first_page_left">
 <img src="images/guitar.png" width="50%" height="50%">
         </div>
@@ -33,7 +36,7 @@ var firstPageContent = `
             <p>Rock</p>
         </div>
 </div>
-<div class="ad_container" onClick="adExample()">
+<div class="ad_container" onClick="adExample_2()">
         <div class="ads_first_page_left">
 <img src="images/singer.png" width="50%" height="50%">
         </div>
@@ -47,7 +50,7 @@ var firstPageContent = `
             <p>Pop</p>
         </div>
 </div>
-<div class="ad_container" onClick="adExample()">
+<div class="ad_container" onClick="adExample_3()">
         <div class="ads_first_page_left">
 <img src="images/piano.png" width="50%" height="50%">
         </div>
@@ -61,7 +64,7 @@ var firstPageContent = `
             <p>KLASSISK</p>
         </div>
 </div>
-<div class="ad_container" onClick="adExample()">
+<div class="ad_container" onClick="adExample_4()">
         <div class="ads_first_page_left">
 <img src="images/producer.png" width="50%" height="50%">
         </div>
@@ -75,7 +78,7 @@ var firstPageContent = `
             <p>POP</p>
         </div>
 </div>
-<div class="ad_container" onClick="adExample()">
+<div class="ad_container" onClick="adExample_5()">
         <div class="ads_first_page_left">
 <img src="images/guitar.png" width="50%" height="50%">
         </div>
@@ -100,6 +103,9 @@ var firstPageContent = `
 
 function createAdButton() {
     
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+    
 var firstPageContent = `
 <div class="middle_parent_box">
     <div class="middle_main_box">
@@ -111,6 +117,8 @@ var firstPageContent = `
   <div class="form-group">
     <label for="exampleFormControlInput1">Namn:</label>
     <input type="name" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <div class="form-group">
     <label for="exampleFormControlInput1">Email:</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="namn@exempel.com">
   </div>
@@ -124,14 +132,18 @@ var firstPageContent = `
     </select>
   </div><br/>
 <h3>Annons:</h3> <br/><br/>
+  <div class="form-group">
     <label for="exampleFormControlInput1">Titel:</label>
     <input type="name" class="form-control" id="exampleFormControlInput1">
+</div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Finnes eller sökes?:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Finnes</option>
       <option>Sökes</option>
     </select>
+  </div>
+  <div class="form-group">
     <label for="exampleFormControlSelect1">Instrument:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Gitarr</option>
@@ -141,6 +153,8 @@ var firstPageContent = `
       <option>Sång</option>
       <option>Övrigt</option>
     </select>
+  </div>
+  <div class="form-group">
     <label for="exampleFormControlSelect1">Genre:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Rock</option>
@@ -148,7 +162,6 @@ var firstPageContent = `
       <option>Hip Hop</option>
       <option>Klassisk</option>
     </select>
-
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Annonstext:</label>
@@ -175,10 +188,57 @@ function submitedAd() {
 
 function searchAd() {
     
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+
+    
 var firstPageContent = `
 <div class="middle_parent_box">
     <div class="middle_main_box">
-sök efter annons här med dropdowns
+<div class="container">
+<h2>Sök efter annonser:</h2> <br/><br/>
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Stad:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Stockholm</option>
+      <option>Västerås</option>
+      <option>Malmö</option>
+      <option>Göteborg</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Finnes eller sökes?:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Finnes</option>
+      <option>Sökes</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Instrument:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Gitarr</option>
+      <option>Piano</option>
+      <option>Trummor</option>
+      <option>Bas</option>
+      <option>Sång</option>
+      <option>Övrigt</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Genre:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Rock</option>
+      <option>Pop</option>
+      <option>Hip Hop</option>
+      <option>Klassisk</option>
+    </select>
+  </div>
+</form>
+<br/>
+<button class="button_style" onClick="homeButton()">Sök</button>
+    </div>
+
     </div>
 </div>
 `;
@@ -186,12 +246,139 @@ sök efter annons här med dropdowns
     mainBox.innerHTML = firstPageContent;
 }
 
-function adExample() {
+function adExample_1() {
     
 var firstPageContent = `
 <div class="middle_parent_box">
     <div class="middle_main_box">
-exempel på annons
+<div class="container">
+<h2>GITARRIST SÖKER BAND</h2> <br/><br/>
+
+<img src="images/guitar.png" width="25%" height="25%">
+Jag heter boo jag söker band! hör av er <br/><br/>
+
+<p>
+<b>FINNES:</b> GITARRIST <br/>
+<b>GENRE:</b> ROCK <br/>
+<b>STAD:</b> STHLM <br/>
+<b>Mailadress:</b> mail@mail.se <br/>
+</p>
+<p align="right"><a class="read_more" href="index.html">TILLBAKA</a></p>
+
+    </div>
+
+    </div>
+</div>
+`;
+
+    mainBox.innerHTML = firstPageContent;
+}
+
+function adExample_2() {
+    
+var firstPageContent = `
+<div class="middle_parent_box">
+    <div class="middle_main_box">
+<div class="container">
+<h2>SÅNGARE SÖKES TILL BAND</h2> <br/><br/>
+
+<img src="images/singer.png" width="25%" height="25%">
+Vi söker nästa Bon Jovi! Hör av er! <br/><br/>
+
+<p>
+<b>SÖKES:</b> SÅNGARE <br/>
+<b>GENRE:</b> POP <br/>
+<b>STAD:</b> VÄSTERÅS <br/>
+<b>Mailadress:</b> mail@mail.se <br/>
+</p>
+<p align="right"><a class="read_more" href="index.html">TILLBAKA</a></p>
+
+    </div>
+
+    </div>
+</div>
+`;
+
+    mainBox.innerHTML = firstPageContent;
+}
+
+function adExample_3() {
+    
+var firstPageContent = `
+<div class="middle_parent_box">
+    <div class="middle_main_box">
+<div class="container">
+<h2>PIANOMÄSTARE FINNES</h2> <br/><br/>
+
+<img src="images/piano.png" width="25%" height="25%">
+Mina vänner kallar mig för Mozart, hör av er!
+
+<p>
+<b>FINNES:</b> PIANIST <br/>
+<b>GENRE:</b> KLASSISKT <br/>
+<b>STAD:</b> MALMÖ <br/>
+<b>Mailadress:</b> mail@mail.se <br/>
+</p>
+<p align="right"><a class="read_more" href="index.html">TILLBAKA</a></p>
+
+    </div>
+
+    </div>
+</div>
+`;
+
+    mainBox.innerHTML = firstPageContent;
+}
+
+function adExample_4() {
+    
+var firstPageContent = `
+<div class="middle_parent_box">
+    <div class="middle_main_box">
+<div class="container">
+<h2>PRODUCENT SÖKES</h2> <br/><br/>
+
+<img src="images/producer.png" width="25%" height="25%">
+Nästa Max Martin sökes!
+
+<p>
+<b>SÖKES:</b> PRODUCENT <br/>
+<b>GENRE:</b> POP <br/>
+<b>STAD:</b> STHLM <br/>
+<b>Mailadress:</b> mail@mail.se <br/>
+</p>
+<p align="right"><a class="read_more" href="index.html">TILLBAKA</a></p>
+
+    </div>
+
+    </div>
+</div>
+`;
+
+    mainBox.innerHTML = firstPageContent;
+}
+
+function adExample_5() {
+    
+var firstPageContent = `
+<div class="middle_parent_box">
+    <div class="middle_main_box">
+<div class="container">
+<h2>GITARRIST SÖKES</h2> <br/><br/>
+
+<img src="images/guitar.png" width="25%" height="25%">
+Vi behöver gitarrist till Bob Marley Coverband. <br/><br/>
+
+<p>
+<b>SÖKES:</b> GITARRIST <br/>
+<b>GENRE:</b> REGGAE <br/>
+<b>STAD:</b> GBG <br/>
+<b>Mailadress:</b> mail@mail.se <br/>
+</p>
+<p align="right"><a class="read_more" href="index.html">TILLBAKA</a></p>
+
+    </div>
+
     </div>
 </div>
 `;
