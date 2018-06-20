@@ -84,8 +84,6 @@ main {
     box-sizing: border-box;
     padding-left: 5px;
     border: 1px solid black;
-
-
 }
 
 .ads_first_page_left {
@@ -107,19 +105,41 @@ cursor:pointer;
   color: white;
 }
 
+.ads_first_page_title_left {
+
+float: left;
+width: 60%;
+height: 100%;
+box-sizing: border-box;
+
+}
+
+.ads_first_page_title_right {
+
+float: left;
+width: 20%;
+height: 100%;
+box-sizing: border-box;
+
+}
+
 .ads_first_page_text_left {
 
 float: left;
 width: 35%;
 height: 100%;
+box-sizing: border-box;
 
 }
 
 .ads_first_page_right {
 
-float: right;
+float: left;
 width: 20%;
 height: 100%;
+box-sizing: border-box;
+word-wrap: break-word;
+
 
 }
 

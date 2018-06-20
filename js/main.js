@@ -7,11 +7,13 @@ function homeButton() {
 var firstPageContent = `
 <div class="middle_parent_box">
     <div class="middle_main_box">
+        <div class="ads_first_page_title_left">
         <h2>SENASTE ANNONSERNA</h2>
-        <div class="ads_first_page_right">
+        </div>
+        <div class="ads_first_page_title_right">
             <h2>GENRE</h2>
         </div>
-        <div class="ads_first_page_right">
+        <div class="ads_first_page_title_right">
             <h2>STAD</h2>
         </div>
         <hr>
