@@ -1,5 +1,4 @@
 
-
 var mainBox = document.getElementById('main_box');
 
 function homeButton() {
@@ -115,15 +114,15 @@ var firstPageContent = `
 <h3>Personguppgifter:</h3><br/><br/>
 <form>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Namn:</label>
+    <label for="exampleFormControlInput1"><i class="fas fa-sort-alpha-up"> </i> Namn:</label>
     <input type="name" class="form-control" id="exampleFormControlInput1">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email:</label>
+    <label for="exampleFormControlInput1"><i class="fas fa-at"></i> </i>Email:</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="namn@exempel.com">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Stad:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-building"> </i>Stad:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Stockholm</option>
       <option>Västerås</option>
@@ -133,18 +132,18 @@ var firstPageContent = `
   </div><br/>
 <h3>Annons:</h3> <br/><br/>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Titel:</label>
+    <label for="exampleFormControlInput1"><i class="fab fa-adn"> </i>Titel:</label>
     <input type="name" class="form-control" id="exampleFormControlInput1">
 </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Finnes eller sökes?:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-search"> </i>Finnes eller sökes?:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Finnes</option>
       <option>Sökes</option>
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Instrument:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-microphone"> </i> </i>Instrument:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Gitarr</option>
       <option>Piano</option>
@@ -155,7 +154,7 @@ var firstPageContent = `
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Genre:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-music"> </i>Genre:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Rock</option>
       <option>Pop</option>
@@ -164,7 +163,7 @@ var firstPageContent = `
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Annonstext:</label>
+    <label for="exampleFormControlTextarea1"><i class="fas fa-align-justify"> </i>Annonstext:</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 </form>
@@ -199,7 +198,7 @@ var firstPageContent = `
 <h2>Sök efter annonser:</h2> <br/><br/>
 <form>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Stad:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-building"> </i>Stad:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Stockholm</option>
       <option>Västerås</option>
@@ -208,14 +207,14 @@ var firstPageContent = `
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Finnes eller sökes?:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-search"> </i>Finnes eller sökes?:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Finnes</option>
       <option>Sökes</option>
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Instrument:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-microphone"> </i> </i>Instrument:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Gitarr</option>
       <option>Piano</option>
@@ -226,7 +225,7 @@ var firstPageContent = `
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Genre:</label>
+    <label for="exampleFormControlSelect1"><i class="fas fa-music"> </i>Genre:</label>
     <select class="form-control" id="exampleFormControlSelect1">
       <option>Rock</option>
       <option>Pop</option>
@@ -386,4 +385,4 @@ Vi behöver gitarrist till Bob Marley Coverband. <br/><br/>
     mainBox.innerHTML = firstPageContent;
 }
     
-    homeButton();
+homeButton();
